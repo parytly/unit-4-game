@@ -1,0 +1,15 @@
+body{
+    background-image: url("./gembackground.jpg");
+    background-size: contain;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+#randomNumber, #userTotal{
+    font-size: 70px;
+    text-align: center;
+}
+#winScore, #lossScore{
+    font-size: 20px;
+}

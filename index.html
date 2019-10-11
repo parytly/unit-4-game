@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOSTRAP LINK  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--  J QUERY LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- LOCAL LINKS  -->
+    <link rel ="stylesheet" href ="assets/css/style.css">
+    <link rel ="stylesheet" href ="assets/css/reset.css">
+
+
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- TITLE OF THE GAME  -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Crystal Collector Game</h1>
+        </div>
+    </div>
+<!-- INSTRUCTIONS FOR THE GAME -->
+    <div class="card">
+            <div class="card-header">
+              How to Play the Game
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p> The player will be given a random number in the "Total Crystal Needed."</p>
+                <p>There are 4 crystals that the player clicks on that will add a specific amount of points to the player total score.</p>
+                <p>The value of each crystal are hidden.</p>
+                <p>The player wins when the total score matches the "Total Crystal Needed".</p>
+                <p>The player loses when the total score goes over the "Total Crystal Needed" amount. Then the crystals are given a new hidden value, and the "Total Crystal Needed" will generate a new random value. </p>
+
+              </blockquote>
+            </div>
+          </div>
+          <br>
+<!-- COMPUTER RANDOM # GUESS & SCORE BOARD -->
+    <div class ="row justify-content-center"> 
+            <div class="card text-white bg-secondary mb-3 col-md-4" style="max-width: 18rem;">
+                    <div class="card-header">Total Crystal Needed:</div>
+                    <div class="card-body">
+                      <!-- random # input -->
+                      <div id="randomNumber"> </div>
+                    </div>
+                  </div>
+                  <br>
+<!-- SCORE BOARD  -->
+              <div class="card border-dark mb-3 col-md-4" style="max-width: 18rem;">
+                    <div class="card-header">Score Board</div>
+                    <div class="card-body text-dark">
+                      <p id="winScore">Wins: </p>
+                      <p id ="lossScore"> Loss: </p>
+                    </div>
+                  </div>  
+    </div>
+    <!-- CRYSTAL IMAGES -->
+    <div class=" row justify-content-center">
+        <div class = "col-md-3 col-sm-3">
+            <button id ="gemO"> <img src="./assets/css/orangegem.jpg"> </button>
+        </div>
+        <div class = "col-md-3 col-sm-3">
+             <button id ="gemP"> <img src="./assets/css/pinkgem.jpg"> </button>
+        </div>
+        <div class = "col-md-3 col-sm-3">
+            <button id ="gemB"> <img src="./assets/css/bluegem.jpg"> </button>
+        </div>
+        <div class = "col-md-3 col-sm-3">
+            <button id ="gemR"> <img src="./assets/css/redgem.jpg"> </button>
+        </div>
+    </div>  
+    <br>
+    <!-- PLAYER'S SCORE BOX -->
+    <div class= "row justify-content-center">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Player's Total Score: </div>
+            <div class="card-body">
+                <!-- PLAYER'S # TOTAL -->
+              <p id="userTotal"> </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- LOCAL JAVASCRIPT LINK  -->
+<script rel ="stylesheet" src ="assets/javascript/game.js"></script>
+</html>
 
