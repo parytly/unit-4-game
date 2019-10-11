@@ -18,26 +18,26 @@
 
     <!-- LOCAL LINKS  -->
     <link rel ="stylesheet" href ="assets/css/style.css">
-    <link rel ="stylesheet" href ="assets/css/reset.css">
+    <!-- <link rel ="stylesheet" href ="assets/css/reset.css"> -->
 
-
+    <link href="https://fonts.googleapis.com/css?family=Acme|Fascinate+Inline|Shadows+Into+Light&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>Crystal Game</title>
 </head>
 
 <body>
     <!-- TITLE OF THE GAME  -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Crystal Collector Game</h1>
+            <h1 class="display-4 gameTitle">Crystal Collector Game</h1>
         </div>
     </div>
 <!-- INSTRUCTIONS FOR THE GAME -->
     <div class="card">
-            <div class="card-header">
+            <div class="card-header title">
               How to Play the Game
             </div>
-            <div class="card-body">
+            <div class="instructions">
               <blockquote class="blockquote mb-0">
                 <p> The player will be given a random number in the "Total Crystal Needed."</p>
                 <p>There are 4 crystals that the player clicks on that will add a specific amount of points to the player total score.</p>
@@ -52,7 +52,7 @@
 <!-- COMPUTER RANDOM # GUESS & SCORE BOARD -->
     <div class ="row justify-content-center"> 
             <div class="card text-white bg-secondary mb-3 col-md-4" style="max-width: 18rem;">
-                    <div class="card-header">Total Crystal Needed:</div>
+                    <div class="card-header title">Total Crystal Needed:</div>
                     <div class="card-body">
                       <!-- random # input -->
                       <div id="randomNumber"> </div>
@@ -61,7 +61,7 @@
                   <br>
 <!-- SCORE BOARD  -->
               <div class="card border-dark mb-3 col-md-4" style="max-width: 18rem;">
-                    <div class="card-header">Score Board</div>
+                    <div class="card-header title">Score Board</div>
                     <div class="card-body text-dark">
                       <p id="winScore">Wins: </p>
                       <p id ="lossScore"> Loss: </p>
@@ -87,7 +87,7 @@
     <!-- PLAYER'S SCORE BOX -->
     <div class= "row justify-content-center">
         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Player's Total Score: </div>
+            <div class="card-header title ">Player's Total Score: </div>
             <div class="card-body">
                 <!-- PLAYER'S # TOTAL -->
               <p id="userTotal"> </p>

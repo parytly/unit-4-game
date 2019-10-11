@@ -2,6 +2,21 @@ body{
     background-image: url("./gembackground.jpg");
     background-size: contain;
 }
+.gameTitle{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 70px;
+}
+.title{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 20px;
+}
+.jumbotron{
+    background-color: lightskyblue;
+}
+.blockquote{
+    font-size: 18px;
+    font-family: 'Acme', sans-serif;
+}
 img{
     width: 150px;
     height: 150px;
