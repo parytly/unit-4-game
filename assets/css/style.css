@@ -12,10 +12,13 @@ body{
 }
 .jumbotron{
     background-color: lightskyblue;
+    background-image: url("./gembackground.jpg");
+    /* background-size: fixed; */
 }
 .blockquote{
     font-size: 18px;
     font-family: 'Acme', sans-serif;
+    background-color: lightskyblue;
 }
 img{
     width: 150px;
@@ -27,4 +30,7 @@ img{
 }
 #winScore, #lossScore{
     font-size: 20px;
+}
+.score-board{
+    height: 200px;
 }

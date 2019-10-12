@@ -37,12 +37,16 @@ var result = function (){
         reset();
         wins++;
         $("#winScore").text("Wins: " + wins);
+        $("#userTotal").text(gemTotal);
+        alert("You won!!!");
         console.log("winner!")
     }
     else if (gemTotal > compNumber){
+        reset();
         loss++;
         $("#lossScore").text("Loss: " + loss);
-        reset();
+        $("#userTotal").text(gemTotal);
+        alert("Loser!!!");
         console.log("loser!")
 };
 }
